@@ -1,16 +1,7 @@
 
-/* take info from https://www.dnd5eapi.co/api/monsters/ (find monsters specifically we're not ready to do all of D&D 5e...but someday...someday)
+// take info from https://www.dnd5eapi.co/api/monsters/ (find monsters specifically we're not ready to do all of D&D 5e...but someday...someday)
 
-display only set of drop downs and a search button as default
 
-drop downs set to random as default (making no specifications will automatically bring up a true rando monster)
-
-drop downs - Type - Habitat - Challege Rating(CR) - size 
-
-hit search and will return as cards of monsters that fit the requirements
-
-can set asurle or save monsters to create encounter
-*/
 const list = document.getElementById("monster-container");
 
 const sizes = document.getElementById('size-select');
