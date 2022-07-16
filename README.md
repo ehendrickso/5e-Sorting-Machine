@@ -1,7 +1,7 @@
 D&D Enemy Sorter
 
 ## Introduction
-This tool will make it easier to sort through all of the different possible enemies in Dungeons & Dragons (5th Edition). This is done by using the fetch() process through the public (https://www.dnd5eapi.co) D&D API.
+This tool will make it easier to sort through many of the different enemies in Dungeons & Dragons (5th Edition). This is done by using the fetch() process through the public (https://www.dnd5eapi.co) D&D API.
 After the information is retrieved we use .filter() to pick and choose which information we would like, as D&D 5e is a bottomless well of information this is crucial. This tool currently in it’s initial version will solely focus on filtering the enemies based on size.
 
 
