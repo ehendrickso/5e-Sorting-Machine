@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(10, 10, 10);
+    color: bisque;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  #tool-header {
+    display: flex;
+    justify-content: center;
+    background: #000;
+    height: 7rem;
+    padding: 1rem;
+  }
+
+  #tool-header img {
+    height: 6rem;
+    width: 50rem;
+    opacity: 75%;
+  }
+ 
+#tiny-select{
+    color: bisque;
+    background-color: #000;
+    align-items: center;
+}
+
+#monster-container{
+  display: grid;
+ 
+  grid-template-columns: repeat(3, 1fr);
+   
+  grid-auto-rows: auto;
+   
+  grid-gap: 1rem;
+}
+
+button{
+  position: absolute;
+right: 10px;
+}
+

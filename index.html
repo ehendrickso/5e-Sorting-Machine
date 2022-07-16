@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>D&D Combat Assistant</title>
+    <link rel="stylesheet" href="index.css" />
+    <div id="tool-header">
+      <img
+        src="https://lh3.googleusercontent.com/IxkmnZnK4NGIX7RJsFP1ZFSS7uoZgc2UVdAUoGVh9jJEbxLyRwKp7vntXvO52LEOPkzSFW0OGqot15gkS_f8ulFyTzzMjVGhQ44-444jbpSzcMLnYrfC9TVQkSgszbTy9sNIGgO6T8dx6kMOm602keFFck2lK6NenSQiuiOgWfnX2DGll_mwC1xiPefUMa0LJUZdQk5Ajk9B12s8RH3mnraKIG8fKM4pGrtIel41Ym6DJQAZuprBXU1A9Ir_PfccxhnN3gME_DNWjLU0ct6ro8K4W33Vu4hORAdqLaCMBOtqU586mp4vcL7eYjvYaUUQK9ByF7IfhTZxueTv4E2uLsmADUgT55SYfnrbs7V_2Ji0hwQjl9LD-OQm8lCHxbKc8w7jsmq2pcBc9gL9CRTSCBNQzM0bbf_GQJmCyIJNe1lTIRy4Zg96PeVFy9BoGY8gkSsAneu0aEAZHONZ_L0fWKj5GYACiFtHTk8PfOL8Og9xPCpiUSdw8_Xwz7QyN9I0zW52CpbTd1mbwnDrDK1gNIHfjoOC-CKinbL7sPAfOKYVtStcqHQqkoAcFzEa2tlRH8quZoROdpqZlzUeBGntdCnUiNbOVXavzgBxqxeN1xQJ9hR6Iufo8hRJnBuPoQH9j_6y8A3sdeLDUiHqUZprD-fa_UoZ7Y5yaN9svyJYCrZvwVaTuw8O6tk3n_pcSlgL-7RHY-n0S_q2ROdZyEoToVDukGBdKhp1P1Lub8Jk6-A19Ko-33RO=w825-h74-no?authuser=0"
+        alt="tool-header"
+      />
+    </div>
+  </head>
+  <body>
+    <button id="reset-button">Reset</button>
+
+   <h1>Sort Enemies by Size</h1>
+
+    <p> What size would you like the enemy to be?:</p>
+    <form>
+        <select id="size-select">
+            <option value="null"></option>
+            <option value="tiny">Tiny</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="huge">Huge</option>
+            <option value="gargantuan">Gargantuan</option>
+        </select>
+    </p>
+
+
+
+    <div id="monster-container"></div>
+  </body>
+  <script type="module" src="/index.js"></script>
+
+</html>
