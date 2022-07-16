@@ -27,6 +27,8 @@ Alignment : Lawful Evil
 
 Any and all enemies within the API that fit those specifications will be displayed, with a picture and a URL link for them specifically.
 
+May include "like" enemies, suggestions for other enemies that are frequently found together.
+
 
 
 
