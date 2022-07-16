@@ -100,7 +100,7 @@ sizes.addEventListener("change", function() {
   })
 
   let hoverAction = resetButton.addEventListener("mouseover", function(e){
-    e.target.style.color = "purple";
+    e.target.style.color = "red";
     setTimeout(function() {
       e.target.style.color = "";
     }, 500);
