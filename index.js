@@ -24,7 +24,7 @@ const monster_refs = await allMonsters()
 const monsters = await Promise.all(monster_refs.map(getMonster))
 
 
-// keeps an eye out for when the dropdown selection is made
+// keeps an eye out for when the dropdown selection is made. based on the value selected will filter the array "sizes" to equal the value of the size and return the matching ones as the html card to be displayed.
 sizes.addEventListener("change", function() {
   if (sizes.value === "tiny"){
   let tinySelect =  monsters.filter(monster => monster.size === "Tiny")
