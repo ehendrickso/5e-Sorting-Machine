@@ -7,6 +7,7 @@ After the information is retrieved we use .filter() to pick and choose which inf
 
 ## Setting up the tool
 Clone the SSH link from GitHub into your terminal. This will include a index.html, index.js, and index.css most notably, it will also include some json documents. You can review the use of filter() and map() in the index.js file.
+From within the cloned directory start a local http server using the `$ http-server ` command. You should recieve a brief wall of text stating your http-server version followed by a list of settings, although important we're more interested on the "Available on:" heading. You should see `http://127.0.0.1:XXXX` the X's will depend on the port you're using. Copy that address and paste in your browser.
 
 ## Using the tool
 
