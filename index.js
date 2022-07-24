@@ -34,7 +34,6 @@ sizes.addEventListener("change", function() {
     <h2>${enemy.name}</h2>
     <p>${enemy.size}
     ${enemy.type}</p>
-  </div>
   `
   })
   list.innerHTML += tinyString.join(' ')
