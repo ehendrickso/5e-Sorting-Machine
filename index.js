@@ -1,5 +1,5 @@
 
-// take info from https://www.dnd5eapi.co/api/monsters/
+// publicly hosted API -  https://www.dnd5eapi.co/api/monsters/
 
 
 const list = document.getElementById("monster-container");
