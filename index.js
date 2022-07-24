@@ -101,7 +101,7 @@ sizes.addEventListener("change", function() {
     location.reload()
   })
 
-  // changes text color on mouse hover
+  // changes text color on mouse hover, holds for a 500 count and then reverts to default
   let hoverAction = resetButton.addEventListener("mouseover", function(e){
     e.target.style.color = "red";
     setTimeout(function() {
