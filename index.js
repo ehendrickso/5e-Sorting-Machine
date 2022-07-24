@@ -1,5 +1,5 @@
 
-// take info from https://www.dnd5eapi.co/api/monsters/ (find monsters specifically we're not ready to do all of D&D 5e...but someday...someday)
+// take info from https://www.dnd5eapi.co/api/monsters/
 
 
 const list = document.getElementById("monster-container");
