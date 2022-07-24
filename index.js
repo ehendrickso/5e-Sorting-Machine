@@ -101,7 +101,7 @@ sizes.addEventListener("change", function() {
     location.reload()
   })
 
-  // for flavor, changes text color on mouse hover, red can be anything but stuck wit the theme
+  // changes text color on mouse hover, red can be anything but stuck wit the theme
   let hoverAction = resetButton.addEventListener("mouseover", function(e){
     e.target.style.color = "red";
     setTimeout(function() {
