@@ -20,7 +20,7 @@ async function getMonster(ref) {
 
 // async await outside of a function thanks to the module doc type
 const monster_refs = await allMonsters()
-// resolve all pomised data so we can sort it
+// resolve all pomised data from fetch so it can be displayed as an array
 const monsters = await Promise.all(monster_refs.map(getMonster))
 
 
