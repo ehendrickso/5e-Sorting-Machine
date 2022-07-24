@@ -94,7 +94,7 @@ sizes.addEventListener("change", function() {
   }}
   )
 
-//waits for reset button to be pressed to reload page
+//waits for reset button to be pressed to reload page , will be removed later when looped listener on dropdown
   const resetButton = document.getElementById("reset-button")
 
   let el = resetButton.addEventListener("click", function() {
