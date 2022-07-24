@@ -107,4 +107,4 @@ sizes.addEventListener("change", function() {
     setTimeout(function() {
       e.target.style.color = "";
     }, 500);
-  }, false)
+  }, false);
