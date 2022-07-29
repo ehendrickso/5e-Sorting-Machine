@@ -25,10 +25,10 @@ const monster_refs = await allMonsters()
 const monsters = await Promise.all(monster_refs.map(getMonster))
 
 // waits for a dropdown selection to be made, based on the value selected will filter the array "sizes" to equal the value of the size and return the matching ones as the html card to be displayed. Is told to return the name, size and type for each monster.
-sizes.addEventListener("change", function() {
+sizes.addEventListener("change", () => {
   if (sizes.value === "tiny"){
-  let tinySelect =  monsters.filter(monster => monster.size === "Tiny")
-  let tinyString = tinySelect.map((enemy) => {
+  const tinySelect =  monsters.filter(monster => monster.size === "Tiny")
+  const tinyString = tinySelect.map((enemy) => {
     return `
       <div class="card">
       <h2>${enemy.name}</h2>
@@ -40,8 +40,8 @@ sizes.addEventListener("change", function() {
   list.innerHTML += tinyString.join(' ')
 
   } else if  (sizes.value === "medium"){
-    let mediumSelect = (monsters.filter(monster => monster.size === "Medium"))
-    let mediumString = mediumSelect.map((enemy) => {
+    const mediumSelect = (monsters.filter(monster => monster.size === "Medium"))
+    const mediumString = mediumSelect.map((enemy) => {
       return `
         <div class="card">
         <h2>${enemy.name}</h2>
@@ -53,8 +53,8 @@ sizes.addEventListener("change", function() {
     list.innerHTML += mediumString.join(' ')
 
   } else if (sizes.value === "large") {
-    let largeSelect = (monsters.filter(monster => monster.size === "Large"))
-    let largeString = largeSelect.map((enemy) => {
+    const largeSelect = (monsters.filter(monster => monster.size === "Large"))
+    const largeString = largeSelect.map((enemy) => {
       return `
         <div class="card">
         <h2>${enemy.name}</h2>
@@ -66,8 +66,8 @@ sizes.addEventListener("change", function() {
     list.innerHTML += largeString.join(' ')
 
   } else if (sizes.value === "huge") {
-    let hugeSelect = (monsters.filter(monster => monster.size === "Huge"))
-    let hugeString = hugeSelect.map((enemy) => {
+    const hugeSelect = (monsters.filter(monster => monster.size === "Huge"))
+    const hugeString = hugeSelect.map((enemy) => {
       return `
         <div class="card">
           <h2>${enemy.name}</h2>
@@ -80,8 +80,8 @@ sizes.addEventListener("change", function() {
 
 
   } else if (sizes.value === "gargantuan") {
-    let gargantuanSelect = (monsters.filter(monster => monster.size === "Gargantuan"))
-    let gargantuanString = gargantuanSelect.map((enemy) => {
+    const gargantuanSelect = (monsters.filter(monster => monster.size === "Gargantuan"))
+    const gargantuanString = gargantuanSelect.map((enemy) => {
       return `
         <div class="card">
           <h2>${enemy.name}</h2>
@@ -97,12 +97,12 @@ sizes.addEventListener("change", function() {
 //waits for reset button to be pressed to reload page , will be removed later when looped listener on dropdown
   const resetButton = document.getElementById("reset-button")
 
-  let el = resetButton.addEventListener("click", () => {
+  const el = resetButton.addEventListener("click", () => {
     location.reload()
   })
 
   // changes text color on mouse hover, holds for a 500 count and then reverts to default
-  let hoverAction = resetButton.addEventListener("mouseover", e => {
+  const hoverAction = resetButton.addEventListener("mouseover", e => {
     e.target.style.color = "red";
     setTimeout(function() {
       e.target.style.color = "";
