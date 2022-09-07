@@ -9,8 +9,8 @@ const sizes = document.getElementById('size-select');
 
 //Get whole array
 async function allMonsters() {
-  const res = fetch("https://www.dnd5eapi.co/api/monsters/")
-  const data = res.json()
+  const res = await fetch("https://www.dnd5eapi.co/api/monsters/")
+  const data = await res.json()
   return data.results
 }
 //get each individiual array since each object of the main array has it's on URL to search fetch-ception
